@@ -2,47 +2,45 @@
 <div class="toolbar" role="banner">
   <a href="">
     <img
-    width="200"
-    alt="Angular Logo"
-    src="../assets/logo_st.png"
+      width="200"
+      alt="Angular Logo"
+      src="../assets/logo_st.png"
   />
   </a>
 
     <div class="spacer"></div>
-    <a href="/" title="Home" rel="noopener" class="title" >
+    <a href="#home" title="Home" rel="noopener" class="title" >
       Home
     </a>
-    <a href="/" title="Home" rel="noopener" class="title" >
+    <a href="#sistemas" title="Home" rel="noopener" class="title" >
       Sistemas
     </a>
-    <a href="/" title="Home" rel="noopener" class="title" >
+    <a href="#time" title="Home" rel="noopener" class="title" >
       Time
     </a>
-    <a href="/" title="Home" rel="noopener" class="title" >
+    <a href="#sobre" title="Home" rel="noopener" class="title" >
       Sobre
     </a>
 </div>
-
-<div class="titulo align-center "style="display: flex;">
+<div class="titulo align-center "style="display: flex;" id="home" >
   <span>
     <h2 id ="black">Olá, Somos o </h2>
     <h1 id="green"> Núcleo de Tecnologia<br>da Informação </h1>
   </span>
   <img
-      id=""
       alt="computador"
       src="../assets/bi-notebook.png"
       width="500"/>
 </div>
-<div >
+<div id="sistemas" >
   <h2 id="h2titulo"> Sistemas desenvolvidos</h2>
   <div class="align-center">
     <a href="http://www.ntist.com.br/estoque">
       <img
-       src="../assets/a378e4b4-0669-420e-b832-20fe86077529.jpg"
-       alt="Serviços Públicos"
-       width="450"
-       >
+        src="../assets/a378e4b4-0669-420e-b832-20fe86077529.jpg"
+        alt="Serviços Públicos"
+        width="450"
+      >
     </a>
     <a href="http://www.oxeserratem.ntist.com.br/"><img
         src="../assets/d2d258ea-3b10-46d8-8d31-01dc5f8ac8f1.jpg"
@@ -54,4 +52,44 @@
 
 <div>
   <h2 id="h2titulo"> Nosso Time </h2>
+  <div class="align-center">
+    <ul style="display: flex; list-style-type: none; flex-wrap: wrap;">
+      <li *ngFor="let link of URLimages">
+        <div class="imagens" style="background-image: url({{link[0]}});">
+        </div>
+        <div id="nome">{{link[1]}}</div>
+      </li>
+    </ul>
+  </div>
 </div>
+<div>
+  <h2 id="h2titulo">Sobre o Núcleo:</h2>
+    <div class="align-center" style="display: flex;">
+      <div id="informacoes">
+            O Núcleo de Tecnologia da Informação é um grupo
+            suplementar responsável por realizar a gestão de
+            infraestrutura de software e hardware da Prefeitura
+            Municipal de Serra Talhada.
+      </div>
+      <div id="informacoes">
+            O NTI tem também a resposabilidade de pesquisar,
+            desenvolver e participar de projetos em Tecnologia
+            de Informação e serviços de informática, bem como
+            de captar recursos atráves de projetos, consultorias
+            e serviços.
+      </div>
+      <div id="informacoes">
+            A atuação deste time é voltada à sede e todas as secretarias,
+            fundações e superintendências vinculadas à prefeitura, bem como
+            prestar serviços à sociedade por meio de projetos sociais diretamente
+            ligados à tecnologia da informação.
+      </div>
+    </div>
+</div>
+
+<footer class = "align-center" style="text-align: center; background-color: #176e29;">
+  <p style="color: white;">
+    Prefeitura Municipal de Serra Talhada<br>
+    Copyright © 2022 - Desenvolvido pelo Núcleo de Tecnologia da Informação
+  </p>
+</footer>
