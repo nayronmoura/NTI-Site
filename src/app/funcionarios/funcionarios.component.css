@@ -11,6 +11,7 @@ li{
 }
 .funcionario img{
   border-radius: 50%;
+  border: 5px solid #a1dbad ;
   width: 250px;
   height: 250px;
 }
@@ -26,8 +27,7 @@ li{
 
 .funcionarios :hover, .funcionario:focus{
   transition: all 0.1s linear;
-  text-decoration: underline;
-  text-decoration-color: #a1dbad;
+  filter:grayscale();
   font-size: 25;
   border-radius: 30%;
   transform: translateX(1px);
