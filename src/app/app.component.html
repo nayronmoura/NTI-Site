@@ -1,93 +1,85 @@
-<div class="toolbar" role="banner">
-  <a href="">
-    <img
-      width="200"
-      alt="Angular Logo"
-      src="../assets/logo_st.png"
-  />
-  </a>
+<body class="site">
+<section>
+  <!--TOPO-->
+  <div class="top logo nav">
+      <article>
+        <img src='../assets/logo_st.png' alt="logo">
+      </article>
+      <article>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#sistemas">Sistemas</a></li>
+          <li><a href="#time">Time</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+      </ul>
+      </article>
+  </div>
+</section>
+<!--titulo-->
+<section id="topo">
+  <div class="container">
+      <article class="title">
+          <h2>Olá, somos o</h2>
+          <h1>Núcleo de Tecnologia<br> da Informação</h1>
+          <hr>
+      </article>
+        <img class="image" src="../assets/bi-notebook.png">
+  </div>
+</section>
 
-    <div class="spacer"></div>
-    <a href="#home" title="Home" rel="noopener" class="title" >
-      Home
-    </a>
-    <a href="#sistemas" title="Home" rel="noopener" class="title" >
-      Sistemas
-    </a>
-    <a href="#time" title="Home" rel="noopener" class="title" >
-      Time
-    </a>
-    <a href="#sobre" title="Home" rel="noopener" class="title" >
-      Sobre
-    </a>
-</div>
-<div class="titulo align-center "style="display: flex;" id="home" >
-  <span>
-  <p id ="black">Olá, Somos o </p>
-    <h1 id="green">Núcleo de Tecnologia<br>da Informação</h1>
-  </span>
-  <img
-      alt="computador"
-      src="../assets/bi-notebook.png"
-      width="500"/>
-</div>
-<div id="sistemas" >
-  <h2 id="h2titulo"> Sistemas desenvolvidos</h2>
-  <div class="align-center">
-    <a href="http://www.ntist.com.br/estoque">
-      <img
-        src="../assets/a378e4b4-0669-420e-b832-20fe86077529.jpg"
-        alt="Serviços Públicos"
-        width="450"
-      >
-    </a>
-    <a href="http://www.oxeserratem.ntist.com.br/"><img
-        src="../assets/d2d258ea-3b10-46d8-8d31-01dc5f8ac8f1.jpg"
-        alt="oxeserratem"
-        width="400">
-      </a>
-  </div>
-</div>
+<!--sistemas desenvolvidos-->
+<section id="sistemas">
+    <h2 class="topico">
+        Sistemas desenvolvidos:
+        <hr>
+    </h2>
+    <article class = "sistemas">
+        <img  src="../assets/a378e4b4-0669-420e-b832-20fe86077529.jpg">
+        <img src="../assets/d2d258ea-3b10-46d8-8d31-01dc5f8ac8f1.jpg">
+    </article>
+</section>
 
-<div>
-  <h2 id="h2titulo"> Nosso Time </h2>
-  <div class="align-center">
-    <ul class="align-center" style="display: flex; list-style-type: none; flex-wrap: wrap;">
-      <li *ngFor="let link of URLimages">
-        <div class="imagens" style="background-image: url({{link[0]}});">
-        </div>
-        <div id="nome">{{link[1]}}</div>
-      </li>
-    </ul>
+<!--funcionários-->
+<section id="time">
+  <h2 class="topico">
+      Nosso Time:
+      <hr>
+  </h2>
+  <!--usa um módulo para resgatar as URLS-->
+  <app-funcionarios></app-funcionarios>
+</section>
+
+<!--Informações sobre o núcleo-->
+<section id="sobre">
+  <h2 class = "topico">
+      Nosso Time:
+      <hr>
+  </h2>
+  <div class="informacoes">
+      <article>
+          <p>
+              O Núcleo de Tecnologia da Informação é um grupo suplementar responsável por realizar a gestão de infraestrutura de software e hardware da Prefeitura Municipal de Serra Talhada.
+          </p>
+      </article>
+      <article>
+          <p>
+              O NTI tem também a resposabilidade de pesquisar, desenvolver e participar de projetos em Tecnologia de Informação e serviços de informática, bem como de captar recursos atráves de projetos, consultorias e serviços.
+          </p>
+      </article>
+      <article>
+          <p>
+              A atuação deste time é voltada à sede e todas as secretarias, fundações e superintendências vinculadas à prefeitura, bem como prestar serviços à sociedade por meio de projetos sociais diretamente ligados à tecnologia da informação.
+          </p>
+      </article>
   </div>
-</div>
-<div>
-  <h2 id="h2titulo">Sobre o Núcleo:</h2>
-    <div class="align-center" style="display: flex;">
-      <div  class='align-center'id="informacoes">
-            O Núcleo de Tecnologia da Informação é um grupo
-            suplementar responsável por realizar a gestão de
-            infraestrutura de software e hardware da Prefeitura
-            Municipal de Serra Talhada.
-      </div>
-      <div id="informacoes">
-            O NTI tem também a resposabilidade de pesquisar,
-            desenvolver e participar de projetos em Tecnologia
-            de Informação e serviços de informática, bem como
-            de captar recursos atráves de projetos, consultorias
-            e serviços.
-      </div>
-      <div id="informacoes">
-            A atuação deste time é voltada à sede e todas as secretarias,
-            fundações e superintendências vinculadas à prefeitura, bem como
-            prestar serviços à sociedade por meio de projetos sociais diretamente
-            ligados à tecnologia da informação.
-      </div>
-  </div>
-</div>
-<footer>
-    <p style="color: white;">
-      Prefeitura Municipal de Serra Talhada<br>
-      Copyright © 2022 - Desenvolvido pelo Núcleo de Tecnologia da Informação
-    </p>
-</footer>}
+</section>
+
+
+<footer class="final">
+  <article><a href="#"><img  src="../assets/logo_st.png" alt=""></a></article>
+  <h3>Núcleo de Tecnologia da Informação - NTI<br>
+    Vinculado à Secretaria de Planejamento e Gestão</h3>
+  <p><a href="https://goo.gl/maps/MKGLb28KTzZrYMY67">Av. Osvaldo de Godoy Lima, 37, AABB, Serra Talhada - PE, Brasil
+    CEP: 56.912-260</a></p>
+  </footer>
+</body>

@@ -1,116 +1,157 @@
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 8px 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+.site{
+  max-width: 100%;
+  margin:0px;
+  scroll-behavior: smooth;
 }
 
-p {
+.logo img{
+  width: 40%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.top{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: green;
+  border-bottom: 5px solid rgb(174, 230, 174);
+}
+.top article{
+  width: 40%;
+}
+
+.nav{
+  display: flex;
+}
+
+.nav article ul{
+  display: flex;
+  margin: auto;
+}
+
+.nav article ul li{
+  margin-left: 10%;
+}
+
+
+.nav article ul li a{
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
   margin: 0;
 }
-#h2titulo{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  color: #176e29;
-  text-align: center;
-  padding-bottom: 20px;
-  padding-top: 40px;
-}
-.spacer {
-  flex: 1;
-}
 
-.toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  background-color: #219738;
-  color: white;
-  font-weight: 600;
-  border-bottom:  10px #beecc7 ;
-}
-
-.toolbar img {
-  margin: 0 16px;
-}
-.toolbar a{
-  color:#eee;
-  margin: 0 40px;
-  font-style: bold;
-  text-decoration: none;
-  font-family: sans-serif;
+.nav article ul li a:hover{
   font-size: 16px;
+  text-decoration:wavy;
 }
-.toolbar a:hover{
-  color:rgb(185, 185, 185)
+
+.title{
+  margin-left: 10%;
 }
-.titulo{
-  align-self: center;
+
+.title h1{
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: 900;
+  color:#055215;
+  font-size: 45px;
+  line-height: 100%;
+}
+
+.title h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color:black;
+  font-size: 30px;
+}
+
+
+.image{
+  width: 40%;
+  margin: auto;
+}
+
+.container{
+  margin-top: 10%;
+  display: flex;
   align-items: center;
-  font-family:Arial, Helvetica, sans-serif;
-  margin: 100px 10%;
+  justify-content: center;
 }
-.titulo #green{
-  Color:#176e29;
+
+
+.topico{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.topico{
+  font-family: 'Open Sans', sans-serif;
+  color: #055215;
   font-size: 40px;
-  letter-spacing: normal;
-  font-weight: bold;
 }
-.titulo #black{
-  Color:#000000;
-  font-size: 25px;
+.topico hr{
+  width: 30px;
 }
-.align-center{
-  display:flex;
+
+.sistemas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sistemas img{
+  width: 30%;
+  margin: auto;
+}
+
+.informacoes{
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.imagens{
-  background-repeat: false;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: 10px 10px 10px 10px;
-}
-#nome{
-  display: flex;
-  justify-content: center;
-  font: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight:bold;
-  color:#176e29;
-}
-#informacoes{
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 10px -4px green;
-  display: flex;
-  padding: 1%;
-  margin: 10px;
-  width: 33%;
-  height: 100px;
-  text-align: center !important;
-}
-.footer-up{
-  background-color:#176e29 ;
-  color: white;
+
+.informacoes article{
+  font-size: auto;
+  font-family: 'Open Sans', sans-serif;;
+  margin-left: 3%;
+  margin-right: 3%;
   text-align: center;
-  height: 100%;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 5px 5px green;
 }
-footer{
+
+.informacoes article:hover{
+  transition: all 0.1s linear;
+  font-size: 25;
+  border-radius: 100%;
+  transform: translateX(1px) scale(1.1);
+  box-shadow: 6px 6px green;
+}
+
+.final{
+  margin-top: 20%;
+  margin-bottom: 4%;
+  margin-bottom: 0;
+  background-color: #055215;
   text-align: center;
-  background-color: #219738;
-  position: relative;
-  display: block;
-  margin:0px;
-  padding: 30px 10px 10px 30px;
   width: 100%;
-  height: 50px;
-  border-bottom: 100px #beecc7;
+  height: 200px;
+  justify-content: center;
+}
+.final img{
+  margin-top: 1%;
+  width: 30%;
+}
+.final h3{
+  color: white;
+  font-size: 100%;
+  line-height: 90%;
+}
+.final p a{
+  color:white;
+  text-decoration: none;
 }

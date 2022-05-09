@@ -1,0 +1,34 @@
+
+li{
+  list-style-type: none
+}
+.funcionarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.funcionario img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.funcionario p{
+  margin-top: 2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #055215;
+  font-family: 'Open Sans';
+}
+
+.funcionarios :hover, .funcionario:focus{
+  transition: all 0.1s linear;
+  text-decoration: underline;
+  text-decoration-color: #a1dbad;
+  font-size: 25;
+  border-radius: 30%;
+  transform: translateX(1px);
+}
