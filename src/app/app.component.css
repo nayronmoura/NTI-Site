@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .site{
   max-width: 100%;
   margin:0px;
@@ -44,7 +46,7 @@
   margin: 0;
 }
 
-.nav article ul li a:hover{
+.nav article ul li a:hover {
   text-decoration:wavy;
   text-decoration: underline;
   text-underline-offset: 5px;
@@ -68,7 +70,6 @@
   color:black;
   font-size: 30px;
 }
-
 
 .image{
   width: 30%;
@@ -97,12 +98,12 @@
 .topico hr{
   width: 30px;
 }
-
 .sistemas{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .sistemas img{
   width: 30%;
   margin: auto;
@@ -110,7 +111,7 @@
 
 .sistemas img:hover,.sistemas img:focus{
   transition: linear 0.2s all;
-  width: 40%;
+  width: 35%;
 }
 
 .sistemas img::after{
@@ -127,8 +128,8 @@
 .informacoes article{
   font-size: auto;
   font-family: 'Open Sans', sans-serif;;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
   text-align: center;
   padding: 5px 5px 5px 5px;
   box-shadow: 5px 5px green;
@@ -146,23 +147,33 @@
   border-top: 5px solid #a1dbad ;
   margin-top: 10%;
   margin-bottom: 4%;
-  margin-bottom: 0;
   background-color: #055215;
   text-align: center;
   width: 100%;
   height: 200px;
   justify-content: center;
 }
+
 .final img{
   margin-top: 1%;
-  width: 30%;
+  width: 20%;
+  margin-bottom: 2%;
 }
+
 .final h3{
   color: white;
   font-size: 100%;
   line-height: 90%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
+
 .final p a{
+  margin: auto;
   color:white;
   text-decoration: none;
+  font-size: 100%;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
