@@ -1,3 +1,4 @@
+import { funcionarioService } from './funcionarios/servico.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -28,7 +29,9 @@ import { FuncionariosComponent } from './funcionarios/funcionarios.component';
     MatIconModule,
     MatListModule
   ],
-  providers: [],
+  providers: [
+    funcionarioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

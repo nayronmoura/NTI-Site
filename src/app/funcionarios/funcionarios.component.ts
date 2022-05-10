@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { funcionarioService } from './servico.service';
 
 @Component({
   selector: 'app-funcionarios',
@@ -14,16 +15,10 @@ export class FuncionariosComponent {
   //melhorar o alinhamento do as informações
   //adicionar os links das imagens dos serviçoes desenvolvidos
   //
-  URLimages;
-  constructor(){
-    this.URLimages=[
-      ['http://ntist.com.br/static/controle_site/images/Junior.png', 'Junior',"adds"],
-      ['http://ntist.com.br/static/controle_site/images/Douglas.png', 'Douglas',"adds"],
-      ['http://ntist.com.br/static/controle_site/images/JV.png','João Victor',"adds"],
-      ['http://ntist.com.br/static/controle_site/images/Bruno.png','Bruno',"adds"],
-      ['http://ntist.com.br/static/controle_site/images/Lucas.png','Lucas',"adds"],
-      ['http://ntist.com.br/static/controle_site/images/Carlos.png','Carlos',"adds"],
-      ['http://ntist.com.br/static/controle_site/images/marcilio.png','Marcilio',"adds"]
-    ]
+  funcionario: string[][];
+
+  constructor(public funcionarioService:funcionarioService){
+    this.funcionario = this.funcionarioService.getFuncionarios();
+
   }
 }

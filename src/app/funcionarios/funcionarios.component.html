@@ -1,9 +1,11 @@
 <div>
   <article class="funcionarios">
-      <li class="funcionario" *ngFor="let link of URLimages">
-          <img src="{{link[0]}}">
-          <h3>{{link[1]}}</h3>
-          <p>{{link[2]}}</p>
+      <li class="funcionario" *ngFor="let link of funcionario">
+          <div style="background-image: url({{link[0]}})" id="imagem">
+            <article id="oculto">
+              <h3> {{link[1]}} <br> {{link[2]}} </h3>
+            </article>
+          </div>
       </li>
   </article>
 </div>
