@@ -1,0 +1,10 @@
+.nav nav{
+  background-color: #055215 !important;
+}
+.nav span{
+  border-color: white;
+}
+.nav a{
+  color:white;
+  font-size: 20px;
+}

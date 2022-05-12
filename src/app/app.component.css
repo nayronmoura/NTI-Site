@@ -7,42 +7,19 @@
   scroll-behavior: smooth;
 }
 
-.logo img{
-  width: 50%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  margin-left: 5%;
-}
-.top{
-  justify-content: space-between;
-  align-items: center;
 
-  border-bottom: 5px solid rgb(174, 230, 174);
-}
-.top article{
-  width: 40%;
-}
-
-.nav nav{
-  background-color: #055215;
-}
-.nav span{
-  border-color: white;
-}
-.nav a{
-  color:white;
-  font-size: 20px;
-}
 
 .title{
   margin-left: 10%;
+  width: auto;
+  height: auto;
 }
 
 .title h1{
   font-family: 'Open Sans', sans-serif;;
   font-weight: 900;
   color:#055215;
-  font-size: 45px;
+  font-size: 100%;
   line-height: 100%;
 }
 
@@ -50,19 +27,12 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   color:black;
-  font-size: 30px;
+  font-size: 90%;
 }
 
-.image{
-  width: 30%;
-  margin: auto;
-}
 
 .container{
-  margin-top: 3%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 10%;
 }
 
 
@@ -87,8 +57,12 @@
 }
 
 .sistemas img{
-  width: 30%;
+  width: 50%;
   margin: auto;
+}
+
+.sistemas article{
+  margin-bottom: 10%;
 }
 
 .sistemas img:hover,.sistemas img:focus{
