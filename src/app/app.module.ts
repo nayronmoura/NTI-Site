@@ -13,12 +13,20 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { FuncionariosComponent } from './funcionarios/funcionarios.component';
 import { NavComponent } from './nav/nav.component';
+import { TituloComponent } from './titulo/titulo.component';
+import { InformacaoComponent } from './informacao/informacao.component';
+import { FooterComponent } from './footer/footer.component';
+import { SistemasComponent } from './sistemas/sistemas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FuncionariosComponent,
-    NavComponent
+    NavComponent,
+    TituloComponent,
+    InformacaoComponent,
+    FooterComponent,
+    SistemasComponent
   ],
   imports: [
     BrowserModule,

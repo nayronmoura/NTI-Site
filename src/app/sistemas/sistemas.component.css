@@ -1,0 +1,28 @@
+img{
+  width: 75%;
+}
+
+.sistemas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sistemas img{
+  width: 50%;
+  margin: auto;
+}
+
+.sistemas article{
+  margin-bottom: 10%;
+}
+
+.sistemas img:hover,.sistemas img:focus{
+  transition: linear 0.2s all;
+  width: 60%;
+}
+
+.sistemas img::after{
+  transition: linear 0.2s all;
+  width: 50%;
+}

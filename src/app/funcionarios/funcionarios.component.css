@@ -12,15 +12,9 @@ h3{
   line-height:100%;
 }
 
-.funcionarios{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .funcionario{
   margin: auto !important;
 }
-
 
 .funcionario #imagem{
   background-repeat: no-repeat;
@@ -33,6 +27,7 @@ h3{
   margin-left: 2px;
   margin-right: 2px;
 }
+
 
 .funcionario #oculto{
   display: none;
@@ -56,4 +51,43 @@ h3{
   transition: all 0.5s linear;
   display: block;
   float:inline-end;
+}
+
+
+@media screen and (max-width: 960px) {
+  .funcionario #imagem{
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 4px solid #a1dbad ;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .funcionario #oculto{
+    display: none;
+  }
+
+
+  #oculto{
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .funcionarios :hover #imagem{
+    overflow: hidden;
+    transition: all 0.1s linear;
+    border-radius: 30%;
+    transform: translateX(1px);
+  }
+  .funcionario :hover #oculto{
+    transition: all 0.5s linear;
+    display: block;
+    float:inline-end;
+  }
+
 }

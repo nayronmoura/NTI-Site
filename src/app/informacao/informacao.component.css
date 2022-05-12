@@ -1,0 +1,23 @@
+.informacoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacoes article{
+  font-size: auto;
+  font-family: 'Open Sans', sans-serif;;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 5px 5px green;
+}
+
+.informacoes article:hover{
+  transition: all 0.1s linear;
+  font-size: 25;
+  border-radius: 100%;
+  transform: translateX(1px) scale(1.1);
+  box-shadow: 6px 6px green;
+}
